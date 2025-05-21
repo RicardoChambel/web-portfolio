@@ -1,0 +1,71 @@
+:root {
+  --bg: rgb(18, 18, 18);
+  --bgContrast: #1a1a1a;
+  --bgHover: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header div,
+header nav {
+  border: 1px solid #555;
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-size: max(1.5vw, 20px);
+  background-color: var(--bgContrast);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header div:hover,
+header nav:hover {
+  border-color: #848484;
+}
+
+@keyframes dotHeader {
+  0% {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dotHeader 1s infinite;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  background-color: var(--bgContrast);
+  padding: 6px 35px;
+}
+
+.nav-menu a {
+  color: #848484;
+  text-decoration: none;
+  cursor: default;
+}
+.nav-menu a:hover {
+  color: white;
+}
+
+.contact {
+  color: white;
+  text-decoration: none;
+}

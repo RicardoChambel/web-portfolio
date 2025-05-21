@@ -1,0 +1,39 @@
+:root {
+  --bg: rgb(18, 18, 18);
+  --bgContrast: #1a1a1a;
+  --bgHover: #333;
+}
+
+.socials {
+  z-index: 100;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background: var(--bgContrast);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socials:hover {
+  border-color: rgb(192, 192, 192);
+}
+.socials:hover > a {
+  background-color: rgb(116, 116, 116);
+}
+.socials a:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+.socials a {
+  position: relative;
+  color: var(--bg);
+  background-color: #555;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
